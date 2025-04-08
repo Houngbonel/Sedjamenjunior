@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Boutique en Ligne</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        .hero {
+            background-color: #ddd;
+            text-align: center;
+        }
+
+        .slider {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 12s infinite;
+        }
+
+        .slides img {
+            width: 100%;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0%); }
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .product:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .product button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        .features {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .feature {
+            max-width: 300px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+        }
+
+        .extra-content {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .extra-content h2 {
+            margin-bottom: 20px;
+        }
+
+        .extra-content p {
+            max-width: 800px;
+            margin: 10px auto;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ma Boutique en Ligne</h1>
+        <p>Les meilleurs produits, les meilleurs prix</p>
+    </header>
+
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#produits">Produits</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+        <a href="inscription.html">Connexion</a>
+    </nav>
+
+    <section id="accueil" class="hero">
+        <div class="slider">
+            <div class="slides">
+                <img src="R.png" alt="Slide 1">
+                <img src="ps3-id.jpg" alt="Slide 2">
+                <img src="R (3).jpg" alt="Slide 3">
+            </div>
+        </div>
+        <h1>Bienvenue sur Ma Boutique en Ligne</h1>
+        <p>Explorez nos dernières offres et trouvez le produit parfait pour vous.</p>
+        <div class="features">
+            <div class="feature">
+                <h3>Livraison Rapide</h3>
+                <p>Nous livrons vos commandes en 24 à 48 heures partout dans l'Afrique.</p>
+            </div>
+            <div class="feature">
+                <h3>Satisfait ou remboursé</h3>
+                <p>Retour facile sous 30 jours si vous n'êtes pas entièrement satisfait.</p>
+            </div>
+            <div class="feature">
+                <h3>Support 24/7</h3>
+                <p>Notre équipe est disponible à toute heure pour répondre à vos questions.</p>
+            </div>
+        </div>
+        <div class="extra-content">
+            <h2>Pourquoi choisir notre boutique ?</h2>
+            <p>Notre boutique en ligne vous garantit une expérience d'achat fluide, sécurisée et agréable. Nos produits sont soigneusement sélectionnés pour répondre à vos besoins quotidiens avec qualité et fiabilité.</p>
+            <p>Profitez régulièrement de nos offres promotionnelles et de nos nouveautés exclusives. Avec un service client réactif, des moyens de paiement sécurisés et des livraisons rapides, vous êtes sûr d'être satisfait !</p>
+        </div>
+    </section>
+
+    <section id="produits" class="products">
+        <div class="product">
+            <img src="OIF.jpg" alt="Produit 1">
+            <h3>Produit 1</h3>
+            <p>Un excellent choix pour tous les jours.</p>
+            <button>Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="OIP (1).jpg" alt="Produit 2">
+            <h3>Produit 2</h3>
+            <p>Fiable, robuste et abordable.</p>
+            <button>Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="OIP (4).jpg" alt="Produit 3">
+            <h3>Produit 3</h3>
+            <p>Parfait pour les amateurs de technologie.</p>
+            <button>Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="OIP.jpg" alt="Produit 4">
+            <h3>Produit 4</h3>
+            <p>Un design élégant et moderne.</p>
+            <button>Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="R (1).jpg" alt="Produit 5">
+            <h3>Produit 5</h3>
+            <p>Qualité supérieure garantie.</p>
+            <button>Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="R (2).jpg" alt="Produit 6">
+            <h3>Produit 6</h3>
+            <p>Un produit très demandé.</p>
+            <button>Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="R (3).jpg"alt="Produit 7">
+            <h3>Produit 7</h3>
+            <p>Le compagnon idéal de votre quotidien.</p>
+            <button>Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="R.jpg" alt="Produit 8">
+            <h3>Produit 8</h3>
+            <p>Un incontournable pour tous.</p>
+            <button>Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="44803303abf8d98df868931d7ec6309c935f60ea-640x426.jpg" alt="Produit 9">
+            <h3>Produit 9</h3>
+            <p>Le meilleur rapport qualité/prix.</p>
+            <button>Ajouter au panier</button>
+        </div>
+    </section>
+
+    <section id="apropos">
+        <h2>À propos de nous</h2>
+        <p>Ma Boutique en Ligne est spécialisée dans la vente de produits de qualité à des prix compétitifs. Nous nous engageons à offrir un excellent service client et une expérience d'achat en ligne agréable.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Vous avez une question ? Notre service client est là pour vous aider du lundi au samedi de 9h à 18h. Écrivez-nous à <a href="mailto:support@maboutique.com">support@maboutique.com</a> ou contactez-nous via notre formulaire de contact sur le site.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ma Boutique en Ligne - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
